@@ -60,4 +60,41 @@
   .project-card a:hover {
     text-decoration: underline;
   }
+  @media (max-width: 768px) {
+    .projects {
+      padding: 3rem 1rem;
+    }
+  
+    .projects h2 {
+      font-size: 2rem;
+    }
+  
+    .project-list {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .project-card {
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+    }
+  
+    .project-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .project-card p {
+      font-size: 0.95rem;
+    }
+  
+    .project-card .tech {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  
+    .project-card a {
+      font-size: 0.85rem;
+    }
+  }
   

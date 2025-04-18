@@ -74,4 +74,40 @@
     color: #444;
     font-weight: 500;
   }
+  @media (max-width: 768px) {
+    .skills {
+      padding: 3rem 1rem;
+    }
+  
+    .skills h2 {
+      font-size: 2rem;
+    }
+  
+    .skills-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skills-group {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .skill-info {
+      font-size: 0.95rem;
+    }
+  
+    .bar-container {
+      height: 10px;
+    }
+  
+    .soft-skills h3 {
+      font-size: 1.2rem;
+    }
+  
+    .soft-skills p {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  }
   
