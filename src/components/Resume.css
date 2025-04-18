@@ -1,0 +1,25 @@
+.resume {
+    background: #f8faff;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .resume-icon {
+    margin-bottom: 2rem;
+  }
+  
+  .resume-btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+    background: #007bff;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background: #0056b3;
+  }
+  

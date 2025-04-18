@@ -1,0 +1,20 @@
+.about {
+    background-color: #9dc8e9;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #121111;
+  }
+  
+  .about-text {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #050505;
+    line-height: 1.8;
+  }
+  
