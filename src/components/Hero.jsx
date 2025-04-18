@@ -24,15 +24,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <h1>Hi, I'm Jashwanth 👋</h1>
-          <p>AI/ML Enthusiast • Data Analyst • Web Developer</p>
-          <div className="hero-buttons">
-            <a href="/Jashwanth_G_Resume.pdf" download>
-              <button className="btn">Download Resume</button>
-            </a>
-            <a href="#contact">
-              <button className="btn secondary">Contact Me</button>
-            </a>
-          </div>
+          <p>AI/ML Enthusiast • ML Engineer • Data Analyst • Web Developer • App Developer</p>
         </motion.div>
 
         <motion.div

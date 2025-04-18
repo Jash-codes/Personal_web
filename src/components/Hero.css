@@ -12,7 +12,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #f9f9f9;
+  background: #9dc8e9;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -23,9 +23,9 @@
 .nav-btn {
   text-decoration: none;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   padding: 0.5rem 1rem;
-  background: #e0e0e0;
+  background: transparent;
   border-radius: 20px;
   transition: 0.3s ease;
   white-space: nowrap;
@@ -59,7 +59,7 @@
 }
 
 .hero-left p {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #555;
 }
