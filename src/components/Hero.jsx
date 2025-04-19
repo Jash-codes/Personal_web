@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import { motion } from 'framer-motion';
-import profilePic from '../assets/jash-profile.jpg'; // ✅ make sure this name matches your image
+import profilePic from '../assets/jash-profile.jpg'; 
 
 const Hero = () => {
   return (
