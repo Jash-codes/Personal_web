@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 const techSkills = [
   { name: "Python", level: 90 },
   { name: "Java", level: 85 },
-  { name: "C++", level: 75 },
-  { name: "SQL", level: 80 },
+  { name: "C", level: 75 },
+  { name: "C++", level: 80 },
   { name: "JavaScript", level: 70 },
   { name: "SQL", level: 80 },
   { name: "HTML", level: 90 },
@@ -14,9 +14,9 @@ const techSkills = [
 ];
 
 const tools = [
-    { name: "Power BI", level: 90 },
-    { name: "Jupyter", level: 85 },
-    { name: "VS Code", level: 95 },
+    { name: "VS Code", level: 90 },
+    { name: "Jupyter Notebook", level: 85 },
+    { name: "Power BI", level: 95 },
     { name: "Git", level: 90 },
     { name: "Streamlit", level: 85 },
     { name: "Flask", level: 80 },
