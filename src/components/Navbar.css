@@ -1,0 +1,33 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 89%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    z-index: 1000;
+  }
+  
+  .nav-logo {
+    font-size: 1.5 rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+    color: #00ffff;
+    transition: 0.3s ease;
+  }
+  

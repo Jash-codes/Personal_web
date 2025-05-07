@@ -1,5 +1,5 @@
 .projects {
-    background: #f4f9ff;
+    background: #23153c;
     padding: 4rem 2rem;
     text-align: center;
   }
@@ -7,7 +7,7 @@
   .projects h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #222;
+    color: #fff0f0;
   }
   
   .project-list {
@@ -17,7 +17,7 @@
   }
   
   .project-card {
-    background: white;
+    background: #9dc8e9;
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -32,12 +32,12 @@
   .project-card h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    color: #007bff;
+    color: #0e0e0e;
   }
   
   .project-card p {
     font-size: 1rem;
-    color: #444;
+    color: #1e1919;
     margin-bottom: 0.8rem;
   }
   

@@ -1,42 +1,41 @@
-import React from 'react';
-import './Hero.css';
-import { motion } from 'framer-motion';
-import profilePic from '../assets/jash-profile.jpg'; 
+import React, { useEffect, useRef } from "react";
+import "./Hero.css";
+import profileCircle from "../assets/jash professional circle.png";
 
 const Hero = () => {
+  const vantaRef = useRef(null);
+
+  useEffect(() => {
+    if (window.VANTA) {
+      const effect = window.VANTA.GLOBE({
+        el: vantaRef.current,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x3dfff,
+        backgroundColor: 0x23153c,
+      });
+
+      return () => {
+        if (effect && typeof effect.destroy === "function") effect.destroy();
+      };
+    }
+  }, []);
+
   return (
-    <section className="hero" id="home">
-      <nav className="navbar">
-        <a href="#home" className="nav-btn">Home</a>
-        <a href="#about" className="nav-btn">About</a>
-        <a href="#projects" className="nav-btn">Projects</a>
-        <a href="#skills" className="nav-btn">Skills</a>
-        <a href="#resume" className="nav-btn">Resume</a>
-        <a href="#blog" className="nav-btn">Blog</a>
-        <a href="#contact" className="nav-btn">Contact</a>
-      </nav>
-
-      <div className="hero-container">
-        <motion.div
-          className="hero-left"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <h1>Hi, I'm Jashwanth 👋</h1>
-          <p>AI/ML Enthusiast • ML Engineer • Data Analyst • Web Developer • App Developer</p>
-        </motion.div>
-
-        <motion.div
-          className="hero-right"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-        >
-          <img src={profilePic} alt="Jashwanth" className="hero-image" />
-        </motion.div>
+    <div className="hero" ref={vantaRef}>
+      <div className="hero-overlay">
+        <img src={profileCircle} alt="Jashwanth" className="hero-image" />
+        <div className="hero-text">
+          <h1>Hi, I'm Jashwanth</h1>
+          <p>IT Student | ML & AI Enthusiast | Data Analyst | Full-Stack Dev</p>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
