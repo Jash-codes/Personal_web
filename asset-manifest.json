@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Personal_web/static/css/main.ba4b1b84.css",
-    "main.js": "/Personal_web/static/js/main.a3a8595c.js",
+    "main.css": "/Personal_web/static/css/main.429d0f06.css",
+    "main.js": "/Personal_web/static/js/main.e677a659.js",
     "static/js/312.9b066486.chunk.js": "/Personal_web/static/js/312.9b066486.chunk.js",
     "static/js/284.2aeaa762.chunk.js": "/Personal_web/static/js/284.2aeaa762.chunk.js",
     "static/js/453.b21437c2.chunk.js": "/Personal_web/static/js/453.b21437c2.chunk.js",
     "static/media/jash professional circle.png": "/Personal_web/static/media/jash professional circle.9c55022c354921daf3ce.png",
     "static/media/Jashwanth_G_Resume.pdf": "/Personal_web/static/media/Jashwanth_G_Resume.c4aa8f81796f749f469b.pdf",
     "index.html": "/Personal_web/index.html",
-    "main.ba4b1b84.css.map": "/Personal_web/static/css/main.ba4b1b84.css.map",
-    "main.a3a8595c.js.map": "/Personal_web/static/js/main.a3a8595c.js.map",
+    "main.429d0f06.css.map": "/Personal_web/static/css/main.429d0f06.css.map",
+    "main.e677a659.js.map": "/Personal_web/static/js/main.e677a659.js.map",
     "312.9b066486.chunk.js.map": "/Personal_web/static/js/312.9b066486.chunk.js.map",
     "284.2aeaa762.chunk.js.map": "/Personal_web/static/js/284.2aeaa762.chunk.js.map",
     "453.b21437c2.chunk.js.map": "/Personal_web/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba4b1b84.css",
-    "static/js/main.a3a8595c.js"
+    "static/css/main.429d0f06.css",
+    "static/js/main.e677a659.js"
   ]
 }
