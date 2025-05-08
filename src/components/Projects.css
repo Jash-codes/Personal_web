@@ -1,3 +1,14 @@
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  background-color: #23153c; /* Match your theme to remove white space */
+}
+
 .projects {
     background: #23153c;
     padding: 4rem 2rem;
@@ -17,13 +28,15 @@
   }
   
   .project-card {
+    width: 300px;
+    max-width: 90vw;
     background: #9dc8e9;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    text-align: left;
-    transition: transform 0.3s ease;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
   }
+  
   
   .project-card:hover {
     transform: translateY(-8px);

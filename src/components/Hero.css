@@ -3,6 +3,10 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-overlay {
@@ -14,22 +18,49 @@
   justify-content: center;
   padding: 2rem;
   color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .hero-image {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  margin-right: 2rem;
+  margin-bottom: 1.5rem;
   border: 3px solid white;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 600px;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  max-width: 600px;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
 }

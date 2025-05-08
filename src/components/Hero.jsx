@@ -1,30 +1,42 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Hero.css";
 import profileCircle from "../assets/jash professional circle.png";
 
 const Hero = () => {
   const vantaRef = useRef(null);
+  const [vantaEffect, setVantaEffect] = useState(null);
 
   useEffect(() => {
-    if (window.VANTA) {
-      const effect = window.VANTA.GLOBE({
-        el: vantaRef.current,
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3dfff,
-        backgroundColor: 0x23153c,
-      });
+    const loadVanta = async () => {
+      const THREE = await import("three");
+      const VANTA = await import("vanta/dist/vanta.globe.min");
 
-      return () => {
-        if (effect && typeof effect.destroy === "function") effect.destroy();
-      };
-    }
-  }, []);
+      if (!vantaEffect) {
+        const effect = VANTA.default({
+          el: vantaRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x31dfff,         // Glove Color
+          color2: 0xffffff,        // Secondary Color
+          backgroundColor: 0x23153c // Background
+        });
+
+        setVantaEffect(effect);
+      }
+    };
+
+    loadVanta();
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
 
   return (
     <div className="hero" ref={vantaRef}>

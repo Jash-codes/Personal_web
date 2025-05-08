@@ -1,13 +1,22 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 89%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end; /* aligns nav to the right */
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background:transparent; /* semi-transparent background */
+  backdrop-filter: blur(10px);   /* adds a soft blur effect behind */
+  z-index: 1000;
+  transition: background 0.3s ease;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+
   
   .nav-logo {
     font-size: 1.5 rem;
@@ -30,4 +39,9 @@
     color: #00ffff;
     transition: 0.3s ease;
   }
+
+
+  
+
+
   
