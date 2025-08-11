@@ -3,7 +3,7 @@ import './Resume.css';
 import { FaFilePdf } from 'react-icons/fa';
 
 const Resume = () => {
-  const resumeFile = require('../assets/Jashwanth_G_Resume.pdf');
+  const resumeFile = require('../assets/G Jashwanth Resume.pdf');
 
   return (
     <section className="resume" id="resume">
